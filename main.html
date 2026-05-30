@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indtekina Todo</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/todo.png" type="image/x-icon">
+
+    <script src="js/show.js" defer></script>
+    <script src="js/internal.js" defer></script>
+
+    <!-- <script src="js/app.js" defer></script> -->
+</head>
+
+<body>
+    <header>
+        <div class="nav_container">
+            <h1>Todo's List</h1>
+
+            <input type="text" placeholder="Search todos">
+            <button id="search">Search</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- This is where the user gives their input -->
+        <section class="adding_area">
+            <input type="text" placeholder="What's on your todo list?" id="todo_input">
+
+            <label for="Type">Choose Type:</label>
+            <select id="Type" name="Type">
+                <option value="daily">Daily</option>
+                <option value="weekly">Weekly</option>
+                <option value="monthly">Monthly</option>
+            </select>
+
+            <button id="add">add</button>
+
+        </section>
+
+        
+        <!-- This where the todos will be shown -->
+        <div class="container">
+            <section class="show_box" id="monthly">
+                <h1>monthly missions</h1>
+            </section>
+
+            <section class="show_box" id="daily">
+                <h1>Todo List</h1>
+            </section>
+
+            <section class="show_box" id="weekly">
+                <h1>weekly missions</h1>
+            </section>
+        </div>
+    </main>
+    
+</body>
+
+</html>
