@@ -41,6 +41,7 @@ function updateProgress(event) {
         if (event.target.classList.contains("right")) {
           todos[i].progress = "done";
           console.log(todos[i]);
+          deleteTodo(id);
           render(todos[i])
         }
         
@@ -50,7 +51,6 @@ function updateProgress(event) {
         }
 
         localStorage.setItem("todos", JSON.stringify(todos));
-        location.reload();
         break;
       }
     }

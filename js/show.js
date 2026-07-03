@@ -42,7 +42,7 @@ function renderAll(todos) {
     render(todos[i])
   }
 }
-
+ 
 // Delete cards using ids
 function deleteTodo(id){
     const card = document.querySelector(`.mission_card[data-id="${id}"]`);
